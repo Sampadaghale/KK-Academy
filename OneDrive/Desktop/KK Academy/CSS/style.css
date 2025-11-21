@@ -74,7 +74,7 @@ body, html, header, .main-container {
 
 .sidebar{
   background-color: #1C5A32;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 50px);
   width: 240px;
   color: white;
   top: 60px;
@@ -141,7 +141,7 @@ body, html, header, .main-container {
   padding: 30px;
   text-align: center;
   font-family: Arial, sans-serif;
-  margin: 40px 0 50px 0px;
+  margin: 30px 0 50px 0px;
   margin-top: 60px;
 }
 
@@ -597,7 +597,7 @@ input {
 .dashboard-card {
   background: #fafafa;
   border: 1px solid #B3B3B3;
-  border-radius: 12px;
+  border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 30px;
   width: 1160px; 
@@ -727,21 +727,19 @@ table tbody td:last-child {
 }
 
 .status-badge {
-  background-color: #1C5A32;
-  color: #ffffff;
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-size: 15px;
-  font-weight: 600;
-  display: inline-block;
+ background-color: #1C5A32;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    width: 20px;
 }
 
 .review-btn {
   background-color: white;
-  color: #1C5A32;
-  border: 1px solid #1C5A32;
+  color: #09BC00;
+  border: 1px solid #09BC00;
   padding: 4px 12px;
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 15px;
   text-decoration: none;
   display: inline-flex;
@@ -750,7 +748,7 @@ table tbody td:last-child {
 }
 
 .review-btn:hover {
-  background-color: #1C5A32;
+  background-color: #09BC00;
   color: white;
 }
 
@@ -768,7 +766,7 @@ table tbody td:last-child {
 }
 
 .view-more-btn:hover {
-  background-color: #28a745;
+  background-color: #09BC00;
   color: white;
 }
 
@@ -844,7 +842,6 @@ table tbody td:last-child {
     display: none !important;
   }
 
-  
   .content {
     margin-left: 70px !important;
     padding: 90px 20px 20px 20px;
@@ -966,7 +963,6 @@ table tbody td:last-child {
   #hamburgerBtn.hide {
     display: none !important;
   }
-
   
   .content {
     margin-left: 65px !important;
@@ -1229,7 +1225,6 @@ table tbody td:last-child {
     right: auto;
     left: calc(91% - 30px);
     font-size: 12px;
-
   }
 
   .score-value-lowest {
