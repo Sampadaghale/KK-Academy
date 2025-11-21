@@ -78,7 +78,7 @@ body, html, header, .main-container {
   width: 240px;
   color: white;
   top: 60px;
-  left: 0;
+  left: 40px;
   padding-top: 2rem;
   position: fixed;
   margin-top: 0;
@@ -128,7 +128,7 @@ body, html, header, .main-container {
 }
 
 .main-container {
-  margin-left: 50px; 
+  margin-left: 100px; 
   padding-top: 20px;  
   padding-right: 20px;
   padding-left: 0;
@@ -368,7 +368,7 @@ input {
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
   text-align: center;
   border: 1px solid #b3b3b3;
-  margin-left: 65px;
+  margin-left: 105px;
   margin-top: -60px;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -386,7 +386,7 @@ input {
   background: white;
   padding: 30px;
   margin-top: -50px;
-  margin-left: 65px;
+  margin-left: 105px;
   width: 500px;
   margin-bottom: 60px;
 }
@@ -602,7 +602,7 @@ input {
   padding: 30px;
   width: 1160px; 
   margin: -45px auto;
-  margin-left: 280px;
+  margin-left: 320px;
   margin-bottom: 20px;
   margin-top: 0px;
 }
