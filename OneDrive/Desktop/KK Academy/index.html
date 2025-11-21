@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/mock.css" />
+    <title>KK Academy</title>
+  </head>
+  <body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4 mt-2" href="#">
+                <img src="images/logo.png" alt="logo" width="150px" height="30px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active mx-3 text-dark" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3 text-dark" href="#">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3 text-dark" href="#">Live Classes</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3 text-dark" href="#">Mock Test</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3 text-dark" href="#">Article</a></li>
+                </ul>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-outline-success nav-btn btn-sm" type="submit">LOG IN</button>
+                    <button class="btn btn-outline-success nav-btn btn-sm" type="submit">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<button class="hamburger-menu" id="hamburgerBtn">☰</button>
+
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<section>
+    <div class="sidebar sidebar-light " id="sidebar">
+        <div class="side flex-column">
+            <ul>
+                <li class="side-item">
+                    <a class="side-link" href="#my profile"> 
+                        <img src="Images/profile.png" alt="profile" class="icon">
+                        <span class="menu-text">My Profile</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="content.html">
+                        <img src="Images/My content.png" alt="My content" class="icon">
+                        <span class="menu-text">My Content</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="Course.html">
+                        <img src="Images/course progress.png" alt="course progress" class="icon">
+                        <span class="menu-text">Course Progress</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="Purchase.html">
+                        <img src="Images/Purchase history.png" alt="purchase history" class="icon">
+                        <span class="menu-text">Purchase History</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/mock test history.png" alt="mock test history" class="icon">
+                        <span class="menu-text">Mock Test History</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/setting.png" alt="setting" class="icon">
+                        <span class="menu-text">Settings</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/student support.png" alt="student support" class="icon">
+                        <span class="menu-text">Student Support</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/feedback.png" alt="feedback" class="icon">
+                        <span class="menu-text">Feedback</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/aboutus.png" alt="about us" class="icon">
+                        <span class="menu-text">About Us</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/logout.png" alt="log out" class="icon">
+                        <span class="menu-text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</section>  
+
+<!-- Main Content -->
+<main class="main-content" id="mainContent">
+    <div class="container-fluid">
+        
+        <div class="row g-3 mb-3">
+            <div class="col-lg-7 col-md-12">
+                <div class="mock-card">
+                    <h5 class="fw-bold mb-2">Mock Test History</h5>
+                    <p class="text-muted m-0">Review your past test papers</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="greet-card d-flex align-items-center">
+                    <div class="profile-circle me-3"></div>
+                    <div>
+                        <p class="m-0">Good Morning <strong>Sazeen Paudel!</strong></p>
+                        <p class="m-0">Welcome to <strong class="text-success">KK Academy Online!</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="row g-3 mb-3">
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="stat-card">
+                    <h4 class="text-primary fw-bold">7</h4>
+                    <p class="text-muted m-0">Total Attempts</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="stat-card">
+                    <h4 class="text-warning fw-bold">87</h4>
+                    <p class="text-muted m-0">Average Score</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="stat-card d-flex justify-content-around align-items-center">
+                    <div>
+                        <h4 class="text-success fw-bold">5</h4>
+                        <p class="text-muted m-0">Passed</p>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div>
+                        <h4 class="text-danger fw-bold">2</h4>
+                        <p class="text-muted m-0">Failed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="stat-card">
+                    <h4 class="text-primary fw-bold">3m 16s</h4>
+                    <p class="text-muted m-0">Average Time Taken</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-board">
+            <table class="table table-hover m-0">
+                <thead>
+                    <tr>
+                        <th>Quiz Title</th>
+                        <th>Date</th>
+                        <th>Marks</th>
+                        <th>Score</th>
+                        <th>Status</th>
+                        <th>Time Taken</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quiz Paper for Science</td>
+                        <td>2025-10-30</td>
+                        <td>Full Marks: 10<br>Obtained: 9</td>
+                        <td>
+                            <div class="progress" style="width: 80px;">
+                                <div class="progress-bar" style="width: 90%;">90%</div>
+                            </div>
+                        </td>
+                        <td><span class="badge">Pass</span></td>
+                        <td>1m 12s</td>
+                        <td><button class="btn btn-outline-success btn-sm">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>Quiz Paper for Math</td>
+                        <td>2025-10-28</td>
+                        <td>Full Marks: 10<br>Obtained: 8</td>
+                        <td>
+                            <div class="progress" style="width: 80px;">
+                                <div class="progress-bar" style="width: 80%;">80%</div>
+                            </div>
+                        </td>
+                        <td><span class="badge">Pass</span></td>
+                        <td>2m 05s</td>
+                        <td><button class="btn btn-outline-success btn-sm">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>Quiz Paper for English</td>
+                        <td>2025-10-25</td>
+                        <td>Full Marks: 10<br>Obtained: 7</td>
+                        <td>
+                            <div class="progress" style="width: 80px;">
+                                <div class="progress-bar" style="width: 70%;">70%</div>
+                            </div>
+                        </td>
+                        <td><span class="badge">Pass</span></td>
+                        <td>3m 20s</td>
+                        <td><button class="btn btn-outline-success btn-sm">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="view-more-wrapper">
+                <button class="btn-view">View More</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="JS/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
