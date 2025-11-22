@@ -1,15 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css" />
      
-
     <title>KK Academy</title>
   </head>
   <body>
@@ -43,7 +40,6 @@
 </header>
 
 <button class="hamburger-menu" id="hamburgerBtn">☰</button>
-
 
 <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
@@ -116,8 +112,9 @@
     </div> 
 </section>  
    
-<div class="main-container d-flex">
-    <section class="content flex-grow-1 p-3">
+<section class="grid-layout custom-container py-5 mt-1 p-3 flex-grow-1">
+
+   
         <div class="profile-card">
             <h2>Your Details</h2>
   
@@ -207,16 +204,70 @@
                 </div>
             </div>
         </div>
-    </section>
+   
+                <div class="greet-card d-flex align-items-center">
+                    <div class="profile-circle me-3"></div>
+                    <div>
+                        <p class="m-0">Good Morning <strong>Sazeen Paudel!</strong></p>
+                        <p class="m-0">Welcome to <strong class="text-success">KK Academy Online!</strong></p>
+                    </div>
+                </div>
+            
+<div class="notification">
+    <div class="notification-icon">
+        <img src="Images/notification.png" alt="notification">
+    </div>
+    <div>
+        <p class="m-0 text-success">Your ongoing live classes:</p>
+        <p class="m-0">No on going live classes </p>
+        <p class="m-0"> right now</p>
+    </div>
 </div>
+            
+                <div class="my-progress">
+    <div>
+        <h2>My Progress</h2>
+    </div>
+    <div class="circle">
+        <span>12%</span>
+    </div>
+    <div class="progress-message">
+        <img src="Images/check_circle.png" alt="check">
+        <p class="m-0">Keep going! You can do it.</p>
+    </div>
+</div>
+<div class="time-card">
+    <!-- Header -->
+    <h5 class="text-center fw-bold mb-1">Total time spent</h5>
+    <p class="text-center time-value mb-0">49 mins</p>
+    
+    <!-- Divider -->
+    <div class="divider"></div>
+    
+    <!-- This week row -->
+    <div class="d-flex justify-content-between align-items-center">
+      <span class="text-muted">This week</span>
+      <span class="week-time">3 hr 48 min</span>
+    </div>
+    
+  <div class="chart-container">
+      <div class="time-bar time-bar-sun">S</div>
+      <div class="time-bar time-bar-mon">M</div>
+      <div class="time-bar time-bar-tue">T</div>
+      <div class="time-bar time-bar-wed">W</div>
+      <div class="time-bar time-bar-thu">T</div>
+      <div class="time-bar time-bar-fri">F</div>
+      <div class="time-bar time-bar-sat">S</div>
+    </div>
+  </div>
+
+            </section>
 
 <div class="grid-container">
-    <!-- LEFT COLUMN -->
-    <div class="left-column">
-       
+    <div class="left-column">    
 <div class="usage-card">
     <h3 class="refer-title">Refer to your friends!</h3>
-    <p class="refer-subtitle">Refer KK Academy to your friends through this referral code and enjoy special discounts!</p>
+    <p class="refer-subtitle ">Refer KK Academy to your friends through this referral code and enjoy special discounts!</p>
     <div class="d-flex">
         <div class="code-display">BL7YG89LJG</div>
         <button class="copy-btn" onclick="copyCode()" title="Copy code">
@@ -227,7 +278,6 @@
         </button>
     </div>
 </div>
-
         <div class="card2">
             <h2>Referral Code Usage</h2>
             <p class="subtitle">Know who used your referral code!</p>
@@ -314,7 +364,6 @@
             </div>
         </div>
     </div>
-
     <div class="review-section">
         <h3>Review your past scores</h3>
         
@@ -370,7 +419,6 @@
         <button class="view-more-btn">View More</button>
     </div>
 </div>
-    
      <script src="JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
