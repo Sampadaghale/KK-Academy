@@ -244,7 +244,6 @@ header, .main-container {
   padding: 8px 10px;
 }
 
-/* Small variants for inputs & labels */
 .label-wrap { width: 100px; display: flex; justify-content: space-between; align-items: center; }
 .colon-edit { width: 20px; text-align: center; }
 input {
@@ -256,7 +255,6 @@ input {
   margin-right: 20px;
 }
 
-/* Cards: greet, notification, progress */
 .greet-card {
   grid-column: span 2;
   grid-row: span 1;
@@ -353,7 +351,7 @@ input {
 }
 .time-bar {
   width: 38px;
-  background-color: #1a7f37;
+  background-color: #1C5A32;
   border-radius: 19px;
   display: flex;
   align-items: flex-end;
@@ -412,10 +410,28 @@ input {
   margin-bottom: 60px;
 }
 
-.refer-title { text-align:center; font-size:1.5rem; font-weight:600; color:#333; margin-bottom:10px; }
-.refer-subtitle { text-align:center; font-size:.875rem; color:#666; margin-bottom:25px; line-height:1.5; }
+.refer-title { 
+  text-align:center; 
+  font-size:1.5rem; 
+  font-weight:600; 
+  color:#333; 
+  margin-bottom:10px; 
+}
 
-.d-flex { display:flex; justify-content:center; align-items:center; gap:15px; }
+.refer-subtitle { 
+  text-align:center; 
+  font-size:.875rem; 
+  color:#666; 
+  margin-bottom:25px; 
+  line-height:1.5; 
+}
+
+.d-flex { 
+  display:flex; 
+  justify-content:center; 
+  align-items:center; 
+  gap:15px;
+ }
 
 .code-display {
   border: 1px solid #d3d3d3;
@@ -439,14 +455,36 @@ input {
   display:flex; align-items:center; justify-content:center;
 }
 .copy-btn:hover { background-color: #145043; }
-.copy-btn svg { width: 20px; height: 20px; }
+.copy-btn svg { 
+  width: 20px; 
+  height: 20px; }
 
-.usage-table { width: 100%; border-collapse: collapse; margin-top: 10px; border: none; }
-.usage-table th { font-size: 14px; padding-bottom: 8px; }
-.usage-table td { padding: 8px 0; font-size: 15px; }
+.usage-table {
+   width: 100%; 
+   border-collapse: collapse; 
+   margin-top: 10px; 
+   border: none; 
+  }
+
+.usage-table th { 
+  font-size: 14px; 
+  padding-bottom: 8px; 
+}
+
+.usage-table td { 
+  padding: 8px 0; 
+  font-size: 15px;
+ }
+
 .usage-table th, .usage-table td { border: none; }
 
-.user-photo { width: 35px; height: 35px; background: #ddd; border-radius: 50%; margin: 0 auto; }
+.user-photo { 
+  width: 35px; 
+  height: 35px; 
+  background: #ddd; 
+  border-radius: 50%; 
+  margin: 0 auto; 
+}
 
 .view-more {
   background: white;
@@ -584,12 +622,38 @@ input {
 
 /* Tables */
 .table-container { overflow-x: auto; }
-table { font-size: 13px; border:1px solid #d3d3d3; border-spacing: 0 10px; }
-table thead th { border: none; padding: 12px 8px; font-weight:600; color:#333; font-size:15px; }
-table tbody tr { background-color: white; border-radius:8px; box-shadow: 0 0 0 1px #dee2e6; }
-table tbody td { padding: 15px 12px; vertical-align: middle; background-color: white; font-size: 15px; }
-table tbody td:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
-table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+table { 
+  font-size: 13px; 
+  border:1px solid #d3d3d3; 
+  border-spacing: 0 10px; 
+}
+
+table thead th { 
+  border: none; 
+  padding: 12px 8px; 
+  font-weight:600; 
+  color:#333; 
+  font-size:15px;
+ }
+
+table tbody tr { 
+  background-color: white; 
+  border-radius:8px; 
+  box-shadow: 0 0 0 1px #dee2e6;
+ }
+
+table tbody td { 
+  padding: 15px 12px; 
+  vertical-align: middle; 
+  background-color: white; 
+  font-size: 15px;
+ }
+
+table tbody td:first-child { border-top-left-radius: 8px; 
+  border-bottom-left-radius: 8px; }
+
+table tbody td:last-child { border-top-right-radius: 8px; 
+  border-bottom-right-radius: 8px; }
 
 .status-badge {
   background-color: #1C5A32;
@@ -611,7 +675,8 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   align-items: center;
   gap: 5px;
 }
-.review-btn:hover { background-color: #09BC00; color: white; }
+.review-btn:hover { background-color: #09BC00; 
+  color: white; }
 
 .view-more-btn {
   background-color: white;
@@ -625,7 +690,8 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   margin: 20px auto 0;
   width: fit-content;
 }
-.view-more-btn:hover { background-color: #09BC00; color: white; }
+.view-more-btn:hover { background-color: #09BC00; 
+  color: white; }
 
 /* Misc */
 .mock-card {
@@ -645,15 +711,26 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   margin-left: 320px;
 }
 
-.profile-circle { width:45px; height:45px; border-radius:50%; background:#f3f4f6; border:1px solid #94a3b8; }
+.profile-circle { 
+  width:45px; 
+  height:45px; 
+  border-radius:50%; 
+  background:#f3f4f6; 
+  border:1px solid #94a3b8; }
 
 .row { padding-left: 12px; padding-right: 12px; }
 
-.btn { border: 1px solid #218F05; color:#218F05; }
-.btn:hover { background-color: #1C5A32; color: #fff; }
-.btn-view { background-color: #1C5A32; color: #fff; border: 1px solid #1C5A32; }
+.btn { border: 1px solid #218F05; 
+  color:#218F05; }
 
-/* ---------- Media Queries (consolidated) ---------- */
+.btn:hover { background-color: #1C5A32; 
+  color: #fff; }
+
+.btn-view { background-color: #1C5A32; 
+  color: #fff; 
+  border: 1px solid #1C5A32; }
+
+
 /* Tablet / small laptop */
 @media (max-width: 991px) {
   .hamburger-menu { display: flex !important; }
@@ -738,7 +815,6 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
     flex-direction:column;
     width:100%;
     margin:0;
-    font-size: 0.9rem;
     padding:15px 10px;
     gap:15px;
   }
@@ -748,9 +824,19 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
     padding:25px 20px;
     margin:0 !important;
   }
-  .profile-pic { width:100px; height:100px; margin-bottom:20px; }
-  .details { margin-left:auto; margin-right:auto; max-width:300px; gap:15px; }
-  .detail-row { grid-template-columns: 80px 10px 1fr; gap:5px; width:100%; }
+  .profile-pic { width:100px; 
+    height:100px; 
+    margin-bottom:20px; }
+
+  .details { margin-left:auto; 
+    margin-right:auto; 
+    max-width:300px; 
+    gap:15px; }
+
+  .detail-row { grid-template-columns: 80px 10px 1fr; 
+    gap:5px; 
+    width:100%; }
+
   .label { text-align:left; }
   .colon { display:flex; align-items:center; justify-content:center; }
   .value { text-align:left; }
@@ -771,8 +857,16 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .time-card { min-height:250px; padding:15px; }
   .time-value { font-size:24px; }
   .week-time, .text-muted { font-size:12px; }
-  .chart-container { height:100px; padding:0 10px; gap:8px; margin-top: -10px; }
-  .time-bar { width:32px; border-radius:16px; font-size:11px; padding-bottom:8px; }
+  .chart-container { height:100px; 
+    padding:0 10px; 
+    gap:8px; 
+    margin-top: -10px; }
+
+  .time-bar { width:32px; 
+    border-radius:16px; 
+    font-size:11px; 
+    padding-bottom:8px; }
+
   .time-bar-sun { height:55px; }
   .time-bar-mon { height:70px; }
   .time-bar-tue { height:45px; }
@@ -781,9 +875,19 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .time-bar-fri { height:38px; }
   .time-bar-sat { height:60px; }
 
-  .modal-content { width:95%; max-width:500px; height:auto; padding:20px; margin-top:30px; }
+  .modal-content { 
+    width:95%; 
+    max-width:500px; 
+    height:auto; 
+    padding:20px; 
+    margin-top:30px; }
+
   .modal-body label { width:80px; font-size:13px; }
-  .grid-container { padding:15px; gap:15px; grid-template-columns:1fr; margin-top:15px; }
+  .grid-container { 
+    padding:15px; 
+    gap:15px; 
+    grid-template-columns:1fr; 
+    margin-top:15px; }
 
   .usage-card, .card2, .leaderboardCard {
     margin-left:20px;
@@ -802,9 +906,17 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .bar-3rd { height:100px; width:55px; }
 
   .btn-leader { margin-left:auto; margin-right:auto; }
-  .dashboard-card { padding:25px 20px; margin:20px !important; width: calc(100% - 30px) !important; }
+  .dashboard-card { 
+    padding:25px 20px; 
+    margin:20px !important; 
+    width: calc(100% - 30px) !important; }
+
   .average-score { font-size:42px; }
-  .score-value { right: 10px; left: auto; }
+
+  .score-value { 
+    right: 10px; 
+    left: auto; }
+
   .score-value-lowest { right: 10px; left: auto; }
   table { font-size:12px; }
   table thead th { font-size:13px; padding:10px 6px; }
@@ -817,7 +929,10 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
 @media (max-width: 575px) {
   .navbar-brand img { width:120px !important; height:24px !important; }
   .nav-buttons { padding:0 10px; gap:5px; }
-  .nav-btn { width:70px; font-size:12px; padding:0 10px; height:23px; }
+  .nav-btn { width:70px; 
+    font-size:12px; 
+    padding:0 10px; 
+    height:23px; }
   .hamburger-menu { font-size:20px; width:30px; height:30px; top:68px; left:12px; }
   .hamburger-menu.active { left:252px; }
 
@@ -829,7 +944,11 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
     margin-right:10px !important;
     width: calc(100% - 30px) !important;
   }
-  .profile-pic { width:90px; height:90px; margin-bottom:15px; }
+  .profile-pic { 
+    width:90px; 
+    height:90px; 
+    margin-bottom:15px; }
+
   .details { gap:12px; margin-bottom:15px; }
   .detail-row { grid-template-columns: 70px 15px 1fr; gap:2px; }
   .label { font-size:12px; }
@@ -838,12 +957,29 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .buttons button { margin:10px 5px; padding:6px 12px; }
   .edit-btn, .delete-btn { width:auto; height:auto; }
 
-  .greet-card { min-height:70px; padding:12px; width: calc(100% - 30px) !important; margin-left:30px !important; }
-  .notification { min-height:120px; padding:12px; gap:3px; width: calc(100% - 30px) !important; margin-left:30px !important; }
+  .greet-card { 
+    min-height:70px; 
+    padding:12px; 
+    width: calc(100% - 30px) !important; 
+    margin-left:30px !important; }
+    
+  .notification { 
+    min-height:120px; 
+    padding:12px; 
+    gap:3px; 
+    width: calc(100% - 30px) !important; 
+    margin-left:30px !important; }
+
   .notification-icon img { width:22px; height:22px; }
   .notification p { font-size:12px; }
 
-  .my-progress { min-height:120px; padding:12px; width: calc(100% - 30px) !important; gap:8px; margin-left:30px !important; }
+  .my-progress { 
+    min-height:120px; 
+    padding:12px; 
+    width: calc(100% - 30px) !important; 
+    gap:8px; 
+    margin-left:30px !important; }
+
   .my-progress h2 { font-size:14px; }
   .circle { width:60px; height:60px; border-width:4px; }
   .circle::before { width:50px; height:50px; }
@@ -851,12 +987,27 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .progress-message { font-size:11px; }
   .progress-message img { width:14px; height:14px; }
 
-  .time-card { min-height:220px; padding:12px; width: calc(100% - 30px) !important; margin-left:30px !important; }
+  .time-card { 
+    min-height:220px; 
+    padding:12px; 
+    width: calc(100% - 30px) !important; 
+    margin-left:30px !important; }
+
   .time-value { font-size:20px; }
   .week-time, .text-muted { font-size:11px; }
   .divider { margin:10px 0; }
-  .chart-container { height:90px; padding:0 5px; gap:6px; margin-top:0; }
-  .time-bar { width:28px; border-radius:14px; font-size:10px; padding-bottom:6px; }
+  .chart-container { 
+    height:90px; 
+    padding:0 5px; 
+    gap:6px; 
+    margin-top:0; }
+
+  .time-bar { 
+    width:28px; 
+    border-radius:14px; 
+    font-size:10px; 
+    padding-bottom:6px; }
+
   .time-bar-sun { height:48px; }
   .time-bar-mon { height:60px; }
   .time-bar-tue { height:40px; }
@@ -865,11 +1016,30 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .time-bar-fri { height:32px; }
   .time-bar-sat { height:52px; }
 
-  .usage-card { width: calc(100% - 20px) !important; margin-left:15px !important; margin-top: -65px !important; margin-right:10px; }
-  .card2 { width: calc(100% - 20px) !important; margin-left:15px !important; margin-top: -5px !important; margin-right:10px; }
-  .code-display { font-size:0.9rem; min-width:140px; padding:10px; letter-spacing:1px; }
+  .usage-card { 
+    width: calc(100% - 20px) !important; 
+    margin-left:15px !important; 
+    margin-top: -65px !important; 
+    margin-right:10px; }
+
+  .card2 { 
+    width: calc(100% - 20px) !important; 
+    margin-left:15px !important; 
+    margin-top: -5px !important; 
+    margin-right:10px; }
+
+  .code-display { 
+    font-size:0.9rem; 
+    min-width:140px; 
+    padding:10px; 
+    letter-spacing:1px; }
+
   .copy-btn { width:40px; height:40px; }
-  .leaderboardCard { width: calc(100% - 20px) !important; margin-left:15px !important; margin-top:0px !important; margin-right:10px; }
+  .leaderboardCard { 
+    width: calc(100% - 20px) !important; 
+    margin-left:15px !important; 
+    margin-top:0px !important; 
+    margin-right:10px; }
 
   .bar-container { gap:40px; margin-top:90px; }
   .bar-1st { height:160px; width:50px; }
@@ -877,7 +1047,12 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .bar-3rd { height:90px; width:50px; }
   .bar::before { width:35px; height:35px; top:-45px; }
 
-  .dashboard-card { padding:20px 15px; width: calc(100% - 60px) !important; margin-left:50px !important; margin-right:10px; }
+  .dashboard-card { 
+    padding:20px 15px; 
+    width: calc(100% - 60px) !important; 
+    margin-left:50px !important; 
+    margin-right:10px; }
+
   .average-score { font-size:38px; }
   table { font-size:11px; }
   table thead th { font-size:11px; padding:8px 4px; }
@@ -895,7 +1070,11 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .hamburger-menu { font-size:18px; width:28px; height:28px; top:65px; left:10px; }
   .hamburger-menu.active { left:248px; }
 
-  .grid-layout { padding:10px 5px; margin-left:40px !important; gap:10px; }
+  .grid-layout { 
+    padding:10px 5px; 
+    margin-left:40px !important; 
+    gap:10px; }
+
   .profile-card { padding:15px 10px; margin:0 !important; }
   .profile-card h2 { font-size:18px; margin-bottom:15px; }
   .profile-pic { width:80px; height:80px; margin-bottom:15px; }
@@ -904,10 +1083,23 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .label { font-size:11px; }
   .value { font-size:11px; }
   .buttons { margin-top:15px; }
-  .buttons button { margin:8px 3px; padding:5px 10px; font-size:12px; }
+  .buttons button { 
+    margin:8px 3px; 
+    padding:5px 10px; 
+    font-size:12px; }
 
-  .greet-card { min-height:60px; padding:10px; margin:0 !important; width: calc(100% - 30px) !important; }
-  .notification { min-height:110px; padding:10px; margin:0 !important; width: calc(100% - 30px) !important; }
+  .greet-card { 
+    min-height:60px; 
+    padding:10px; 
+    margin:0 !important; 
+    width: calc(100% - 30px) !important; }
+
+  .notification { 
+    min-height:110px; 
+    padding:10px; 
+    margin:0 !important; 
+    width: calc(100% - 30px) !important; }
+
   .notification-icon img { width:20px; height:20px; }
   .notification p { font-size:11px; }
 
@@ -919,7 +1111,12 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .progress-message { font-size:10px; }
   .progress-message img { width:12px; height:12px; }
 
-  .time-card { min-height:200px; padding:10px; margin:0 !important; width: calc(100% - 30px) !important; }
+  .time-card { 
+    min-height:200px; 
+    padding:10px; 
+    margin:0 !important; 
+    width: calc(100% - 30px) !important; }
+
   .time-value { font-size:18px; }
   .week-time, .text-muted { font-size:10px; }
   .divider { margin:8px 0; }
@@ -935,7 +1132,13 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
 
   .modal-content { width:98%; padding:15px 10px; }
   .grid-container { padding:10px; gap:10px; }
-  .usage-card, .card2, .leaderboardCard { padding:15px; margin:0 !important; width: calc(100% - 20px) !important; margin-left:15px !important; margin-right:10px !important; }
+  .usage-card, .card2, .leaderboardCard { 
+    padding:15px; 
+    margin:0 !important; 
+    width: calc(100% - 20px) !important; 
+    margin-left:15px !important; 
+    margin-right:10px !important; }
+
   .code-display { font-size:0.8rem; min-width:120px; padding:8px; }
   .copy-btn { width:35px; height:35px; }
 
@@ -945,7 +1148,11 @@ table tbody td:last-child { border-top-right-radius: 8px; border-bottom-right-ra
   .bar-3rd { height:80px; width:45px; }
   .bar::before { width:32px; height:32px; top:-42px; }
 
-  .dashboard-card { padding:15px 10px; margin:10px 5px !important; width: calc(100% - 10px) !important; }
+  .dashboard-card { 
+    padding:15px 10px; 
+    margin:10px 5px !important; 
+    width: calc(100% - 10px) !important; }
+
   .average-score { font-size:32px; }
   .score-header h2 { font-size:13px; }
   table { font-size:10px; }
