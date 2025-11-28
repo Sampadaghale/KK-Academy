@@ -59,7 +59,6 @@ body, html, header, .main-container {
     left: 255px;
 }
 
-/* ---------------------- SIDEBAR ---------------------- */
 .sidebar-overlay {
     display: none;
     position: fixed;
@@ -252,35 +251,56 @@ body, html, header, .main-container {
     text-align: center;
 }
 
+@media (min-width: 1920px) {
+    .main-content {
+        margin-left: 300px;
+        padding: 110px 60px;
+    }
 
-/* ≤ 991px (TABLET) */
+    .sidebar {
+        width: 260px;
+        left: 50px;
+    }
+
+    .mock-card, .greet-card, .stat-card {
+        padding: 30px;
+    }
+
+    .nav-btn {
+        width: 110px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .main-content {
+        margin-left: 230px;
+    }
+}
+
+
 @media (max-width: 991px) {
-
     .hamburger-menu { display: flex !important; }
-  .sidebar { left: 0; transform: translateX(-100%); }
-  .sidebar.active { transform: translateX(0); }
-  .sidebar-overlay.active { display: block; }
-  #hamburgerBtn { display: flex; }
-  #hamburgerBtn.hide { display: none !important; }
+    .sidebar { 
+        left: 0; 
+        transform: translateX(-100%); 
+    }
+    .sidebar.active { transform: translateX(0); }
+    .sidebar-overlay.active { display: block; }
 
     .main-content {
         margin-left: 20px;
         padding: 85px 15px 20px 15px;
     }
-
-    .mock-card,
-    .greet-card,
-    .stat-card {
-        margin-left: 0;
-    }
 }
 
-/* ≤ 767px (MOBILE) */
+
 @media (max-width: 767px) {
 
     .navbar-brand img {
-        width: 120px !important;
-        height: 24px !important;
+        width: 120px;
+        height: 24px;
     }
 
     .nav-buttons {
@@ -291,8 +311,8 @@ body, html, header, .main-container {
     .nav-btn {
         width: 70px;
         font-size: 12px;
-        padding: 0 10px;
         height: 23px;
+        padding: 0 10px;
     }
 
     .hamburger-menu {
@@ -307,6 +327,14 @@ body, html, header, .main-container {
         left: 252px;
     }
 
+      #hamburgerBtn {
+    display: flex;
+  }
+
+     #hamburgerBtn.hide {
+    display: none !important;
+  }
+
     .main-content {
         margin-left: 10px;
         padding: 85px 15px 20px 15px;
@@ -319,8 +347,128 @@ body, html, header, .main-container {
     .mock-card h5 {
         font-size: 1.1rem;
     }
+}
+
+@media (max-width: 576px) {
+
+    .navbar-brand img {
+        width: 110px;
+        height: 22px;
+    }
+
+    .nav-buttons {
+        gap: 4px;
+        padding: 0 8px;
+    }
+
+    .nav-btn {
+        width: 60px;
+        font-size: 11px;
+        height: 22px;
+        padding: 0 8px;
+    }
+
+    .hamburger-menu {
+        font-size: 18px;
+        width: 22px;
+        height: 22px;
+        top: 65px;
+        left: 5px;
+    }
+
+    .hamburger-menu.active {
+        left: 240px;
+    }
+
+       #hamburgerBtn {
+    display: flex;
+  }
+
+     #hamburgerBtn.hide {
+    display: none !important;
+  }
+
+    .main-content {
+        margin-left: 5px;
+        padding: 80px 12px 20px 12px;
+    }
+
+    .mock-card, .greet-card {
+        padding: 15px;
+    }
+
+    .mock-card h5 {
+        font-size: 1rem;
+    }
 
     .mock-card p, .greet-card p {
-        font-size: 13
+        font-size: 12px;
     }
+
+    .table-board {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar-brand img {
+        width: 95px;
+        height: 20px;
+    }
+
+    .nav-btn {
+        width: 55px;
+        height: 20px;
+        font-size: 10px;
+        padding: 0 6px;
+    }
+
+    .hamburger-menu {
+        font-size: 16px;
+        width: 20px;
+        height: 20px;
+        top: 63px;
+        left: 5px;
+    }
+
+    .hamburger-menu.active {
+        left: 230px;
+    }
+
+       #hamburgerBtn {
+    display: flex;
   }
+
+     #hamburgerBtn.hide {
+    display: none !important;
+  }
+
+    .main-content {
+        margin-left: 5px;
+        padding: 75px 10px 18px 10px;
+    }
+
+    .mock-card, .greet-card {
+        padding: 12px;
+    }
+
+    .mock-card p, .greet-card p {
+        font-size: 11px;
+    }
+
+    .table td, .table th {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .review-btn {
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+
+    .btn-view {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+}
