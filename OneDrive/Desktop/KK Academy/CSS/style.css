@@ -1,11 +1,4 @@
-:root {
-    --primary-green: #1C5A32;
-    --primary-red: #DC3545;
-    --success-green: #09BC00;
-    --light-gray: #B3B3B3;
-}
 
-/* Global */
 * {
     box-sizing: border-box;
 }
@@ -29,7 +22,7 @@ body {
     top: 70px;
     left: 10px;
     z-index: 1600;
-    background: var(--primary-red);
+    background: #DC3545;
     border: none;
     color: white;
     font-size: 24px;
@@ -56,7 +49,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    background: var(--primary-green);
+    background: #1C5A32;
     color: white;
     position: fixed;
     top: 60px;
@@ -74,7 +67,7 @@ body {
     padding: 10px 15px;
 }
 .sidebar .nav-link:hover {
-    background: var(--primary-red);
+    background: #DC3545;
 }
 .sidebar .icon {
     width: 20px;
@@ -105,7 +98,7 @@ body {
     margin: 0 auto 20px;
     border-radius: 50%;
     position: relative;
-    border: 2px solid var(--primary-green);
+    border: 2px solid #d3d3d3;
     background: #e0e0e0;
     display: flex;
     justify-content: center;
@@ -126,7 +119,7 @@ body {
     position: absolute;
     bottom: -5px;
     right: 10px;
-    background: var(--primary-green);
+    background: #1C5A32;
     color: white;
     border: none;
     border-radius: 50%;
@@ -147,7 +140,7 @@ body {
 
 /* Details */
 .detail-label {
-    color: var(--primary-green);
+    color: #1C5A32;
     font-weight: 600;
     min-width: 100px;
     text-align: left;
@@ -165,8 +158,8 @@ body {
 /* Custom Buttons */
 .btn-primary-custom,
 .btn-danger-custom {
-    background: var(--primary-green);
-    border-color: var(--primary-green);
+    background: #1C5A32;
+    border-color: #1C5A32;
     color: white;
     min-width: 110px;
     border-radius: 10px;
@@ -179,14 +172,14 @@ body {
 }
 
 .btn-outline-custom {
-    border: 1px solid var(--success-green);
-    color: var(--success-green);
+    border: 1px solid #09BC00;
+    color: #09BC00;
     background: white;
     padding: 6px 20px;
     border-radius: 8px;
 }
 .btn-outline-custom:hover {
-    background: var(--success-green);
+    background: #09BC00;
     color: white;
 }
 
@@ -205,14 +198,14 @@ body {
 .progress-circle span {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-green);
+    color: #1C5A32;
 }
 
 /* Time Bars */
 .time-bar {
     width: 100%;
     max-width: 50px;
-    background: var(--primary-green);
+    background: #1C5A32;
     border-radius: 50px;
     color: white;
     font-weight: 600;
@@ -253,7 +246,7 @@ body {
 
 /* Status Badge */
 .status-badge {
-    background: var(--primary-green);
+    background: #1C5A32;
     color: white;
     padding: 4px 16px;
     border-radius: 15px;
@@ -274,7 +267,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--primary-green);
+    background: #1C5A32;
     border: none;
     color: white;
     cursor: pointer;
@@ -293,9 +286,9 @@ body {
     background: #ddd;
     border-radius: 50%;
     margin: 0 auto;
+    text-align: left;
 }
 
-/* Greeting Profile Circle */
 .profile-circle {
     width: 60px;
     height: 60px;
@@ -304,14 +297,12 @@ body {
     border: 1px solid #94a3b8;
 }
 
-/* Average Score */
 .average-score {
     font-size: 3rem;
     font-weight: bold;
-    color: var(--primary-green);
+    color: #1C5A32;
 }
 
-/* Score Progress Bars */
 .score-progress {
     height: 35px;
     background: #e9ecef;
@@ -320,7 +311,7 @@ body {
     overflow: hidden;
 }
 .score-progress .progress-bar {
-    background: var(--primary-green);
+    background: #1C5A32;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -331,7 +322,7 @@ body {
     height: 100%;
 }
 
-/* Table Responsive */
+
 .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -341,13 +332,6 @@ body {
     min-width: 600px;
 }
 
-/* ========================================
-   RESPONSIVE BREAKPOINTS
-========================================= */
-
-/* ----------------------------------------
-   ULTRA WIDE (2560px+)
------------------------------------------ */
 @media (min-width: 2560px) {
     .main-content {
         margin-left: 300px;
@@ -366,9 +350,6 @@ body {
     }
 }
 
-/* ----------------------------------------
-   LARGE DESKTOP (1920px - 2559px)
------------------------------------------ */
 @media (min-width: 1920px) and (max-width: 2559px) {
     .main-content {
         margin-left: 280px;
@@ -393,9 +374,7 @@ body {
     }
 }
 
-/* ----------------------------------------
-   DESKTOP (1600px - 1919px)
------------------------------------------ */
+
 @media (min-width: 1600px) and (max-width: 1919px) {
     .main-content {
         margin-left: 280px;
@@ -411,9 +390,6 @@ body {
     }
 }
 
-/* ----------------------------------------
-   STANDARD DESKTOP (1400px - 1599px)
------------------------------------------ */
 @media (min-width: 1400px) and (max-width: 1599px) {
     .main-content {
         margin-left: 270px;
@@ -428,9 +404,6 @@ body {
     }
 }
 
-/* ----------------------------------------
-   LAPTOP (1200px - 1399px)
------------------------------------------ */
 @media (min-width: 1200px) and (max-width: 1399px) {
     .main-content {
         margin-left: 260px;
@@ -449,10 +422,6 @@ body {
     .bar-3rd { height: 170px; }
 }
 
-/* ----------------------------------------
-   TABLET LANDSCAPE (992px - 1199px)
-   HAMBURGER SHOWS - SIDEBAR COLLAPSES
------------------------------------------ */
 @media (max-width: 1199px) {
     .main-content {
         margin-left: 0 !important;
@@ -497,10 +466,6 @@ body {
     .bar-3rd { height: 150px; }
 }
 
-/* ----------------------------------------
-   TABLET PORTRAIT (768px - 991px)
-   HAMBURGER VISIBLE
------------------------------------------ */
 @media (max-width: 991px) {
     .main-content {
         margin-left: 0 !important;
@@ -564,10 +529,6 @@ body {
     }
 }
 
-/* ----------------------------------------
-   MOBILE LARGE (576px - 767px)
-   HAMBURGER VISIBLE
------------------------------------------ */
 @media (max-width: 767px) {
     .main-content {
         margin-left: 0 !important;
@@ -675,9 +636,6 @@ body {
     }
 }
 
-/* ----------------------------------------
-   MOBILE SMALL (below 576px)
------------------------------------------ */
 @media (max-width: 575px) {
     body {
         padding-top: 55px;
@@ -899,9 +857,7 @@ body {
     }
 }
 
-/* ----------------------------------------
-   EXTRA SMALL MOBILE (below 400px)
------------------------------------------ */
+
 @media (max-width: 399px) {
     .profile-pic,
     .profile-pic1 {
