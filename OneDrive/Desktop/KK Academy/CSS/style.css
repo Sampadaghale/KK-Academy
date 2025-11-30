@@ -52,6 +52,7 @@ body {
     background: #1C5A32;
     color: white;
     position: fixed;
+    margin-top: 20px;
     top: 60px;
     left: 20px;
     height: calc(100vh - 60px);
@@ -93,8 +94,8 @@ body {
 /* Profile Picture Shared Styling */
 .profile-pic,
 .profile-pic1 {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     margin: 0 auto 20px;
     border-radius: 50%;
     position: relative;
@@ -139,6 +140,11 @@ body {
 }
 
 /* Details */
+
+.details-row{
+    margin-top: 30px;
+   margin-left: 70px;
+}
 .detail-label {
     color: #1C5A32;
     font-weight: 600;
@@ -148,12 +154,14 @@ body {
 .detail-value {
     flex: 1;
     text-align: left;
+    padding-left: 20px;
 }
 .details-row {
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
 
 /* Custom Buttons */
 .btn-primary-custom,
@@ -164,6 +172,7 @@ body {
     min-width: 110px;
     border-radius: 10px;
     padding: 8px 20px;
+    margin-top: 20px;
 }
 .btn-primary-custom:hover,
 .btn-danger-custom:hover {
@@ -225,7 +234,6 @@ body {
     align-items: flex-end;
     justify-content: center;
     font-weight: bold;
-    padding-bottom: 12px;
     color: white;
     font-size: 18px;
 }
@@ -235,8 +243,8 @@ body {
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: inherit;
 }
@@ -286,7 +294,6 @@ body {
     background: #ddd;
     border-radius: 50%;
     margin: 0 auto;
-    text-align: left;
 }
 
 .profile-circle {
@@ -454,80 +461,18 @@ body {
     .profile-pic,
     .profile-pic1 {
         width: 120px;
-        height: 120px;
+        height: 160px;
     }
-    
+
     .leaderboard-bar {
         width: 55px;
     }
     
-    .bar-1st { height: 220px; }
-    .bar-2nd { height: 180px; }
-    .bar-3rd { height: 150px; }
+    .bar-1st { height: 265px; }
+    .bar-2nd { height: 225px; }
+    .bar-3rd { height: 195px; }
 }
 
-@media (max-width: 991px) {
-    .main-content {
-        margin-left: 0 !important;
-        padding: 10px;
-        padding-left: 10px;
-    }
-    
-    .container-fluid {
-        padding-left: 56px !important;
-    }
-    
-    .hamburger-menu {
-        display: block;
-        top: 68px;
-        left: 10px;
-        width: 42px;
-        height: 42px;
-    }
-    
-    .sidebar {
-        transform: translateX(-100%);
-        left: 0;
-        width: 240px;
-    }
-    
-    .sidebar.active {
-        transform: translateX(0);
-    }
-    
-    .profile-pic,
-    .profile-pic1 {
-        width: 110px;
-        height: 110px;
-    }
-    
-    .detail-label {
-        min-width: 90px;
-        font-size: 14px;
-    }
-    
-    .leaderboard-bar {
-        width: 50px;
-    }
-    
-    .bar-1st { height: 200px; }
-    .bar-2nd { height: 160px; }
-    .bar-3rd { height: 130px; }
-    
-    .leaderboard-bar::before {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .time-bar {
-        max-width: 40px;
-        font-size: 12px;
-    }
-    
-    .average-score {
-        font-size: 2.5rem;
-    }
-}
 
 @media (max-width: 767px) {
     .main-content {
@@ -754,12 +699,14 @@ body {
     
     .card-body {
         padding: 1rem !important;
+       
     }
     
     /* Progress */
     .progress-circle {
         width: 65px;
         height: 65px;
+       
     }
     
     .progress-circle span {
