@@ -6,10 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-body, html, header, .main-container {
-    overflow: visible !important;
-}
-
 .navbar {
     position: fixed !important;
     width: 100%;
@@ -207,17 +203,19 @@ body, html, header, .main-container {
     background-color: #1C5A32;
     color: white;
     padding: 5px 15px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .progress {
-    border-radius: 20px;
+    border-radius: 10px;
     height: 25px;
+    border: 1px solid #1C5A32;
 }
 
 .progress-bar {
     background-color: #1C5A32;
     border-radius: 10px;
+    
 }
 
 .review-btn {
@@ -295,7 +293,6 @@ body, html, header, .main-container {
     }
 }
 
-
 @media (max-width: 767px) {
 
     .navbar-brand img {
@@ -319,7 +316,7 @@ body, html, header, .main-container {
         font-size: 20px;
         width: 25px;
         height: 25px;
-        top: 68px;
+        top: 78px;
         left: 8px;
     }
 
@@ -372,7 +369,7 @@ body, html, header, .main-container {
         font-size: 18px;
         width: 22px;
         height: 22px;
-        top: 65px;
+        top: 75px;
         left: 5px;
     }
 
@@ -428,7 +425,7 @@ body, html, header, .main-container {
         font-size: 16px;
         width: 20px;
         height: 20px;
-        top: 63px;
+        top: 73px;
         left: 5px;
     }
 

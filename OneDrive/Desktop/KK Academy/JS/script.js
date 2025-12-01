@@ -58,3 +58,39 @@ function copyCode() {
         console.error('Failed to copy:', err);
     });
 }
+
+/**
+ * Load content dynamically into the mainContent div.
+ * @param {string} file - The path to the content-only HTML file
+ */
+function loadContent(file) {
+    fetch(file)
+        .then(response => {
+            if (!response.ok) throw new Error('Content not found: ' + file);
+            return response.text();
+        })
+        .then(html => {
+            // Inject the fetched HTML into the mainContent container
+            document.getElementById('mainContent').innerHTML = html;
+
+            // Optional: Scroll to top whenever new content loads
+            window.scrollTo(0, 0);
+        })
+        .catch(error => {
+            console.error(error);
+            document.getElementById('mainContent').innerHTML = `
+                <p style="color:red;">Error loading content.</p>
+            `;
+        });
+}
+
+/**
+ * Optional: Highlight the active sidebar link
+ */
+function setActiveSidebar(link) {
+    // Remove 'active' from all links
+    document.querySelectorAll('.sidebar a').forEach(a => a.classList.remove('active'));
+
+    // Add 'active' to the clicked link
+    link.classList.add('active');
+}

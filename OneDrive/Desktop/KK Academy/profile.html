@@ -10,90 +10,115 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-    <div class="container-fluid px-3">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="logo" width="150" height="30">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link active text-dark mx-2" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-dark mx-2" href="#">Courses</a></li>
-                <li class="nav-item"><a class="nav-link text-dark mx-2" href="#">Live Classes</a></li>
-                <li class="nav-item"><a class="nav-link text-dark mx-2" href="#">Mock Test</a></li>
-                <li class="nav-item"><a class="nav-link text-dark mx-2" href="#">Article</a></li>
-            </ul>
-            <div class="d-flex gap-2">
-                <button class="btn btn-outline-success btn-sm px-3">LOG IN</button>
-                <button class="btn btn-outline-success btn-sm px-3">SIGN UP</button>
+ <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-2 mt-2" href="#">
+                <img src="images/logo.png" alt="logo" width="150px" height="30px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active mx-3 text-dark" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3 text-dark" href="#">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3 text-dark" href="#">Live Classes</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3 text-dark" href="#">Mock Test</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3 text-dark" href="#">Article</a></li>
+                </ul>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-outline-success nav-btn btn-sm" type="submit">LOG IN</button>
+                    <button class="btn btn-outline-success nav-btn btn-sm" type="submit">SIGN UP</button>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 
 <button class="hamburger-menu" id="hamburgerBtn">☰</button>
 
 
 <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-
-
-<!-- Sidebar -->
-<aside class="sidebar" id="sidebar">
-    <nav class="nav flex-column p-3">
-        <a class="nav-link d-flex align-items-center mb-2" href="#my-profile">
-            <img src="Images/profile.png" alt="profile" class="icon me-2">
-            <span>My Profile</span>
-        </a>
-        <a class="nav-link d-flex align-items-center mb-2" href="content.html">
-            <img src="Images/My content.png" alt="My content" class="icon me-2">
-            <span>My Content</span>
-        </a>
-        <a class="nav-link d-flex align-items-center mb-2" href="Course.html">
-            <img src="Images/course progress.png" alt="course progress" class="icon me-2">
-            <span>Course Progress</span>
-        </a>
-        <a class="nav-link d-flex align-items-center mb-2" href="Purchase.html">
-            <img src="Images/Purchase history.png" alt="purchase history" class="icon me-2">
-            <span>Purchase History</span>
-        </a>
-        <a class="nav-link d-flex align-items-center mb-2" href="#">
-            <img src="Images/mock test history.png" alt="mock test history" class="icon me-2">
-            <span>Mock Test History</span>
-        </a>
-        <a class="nav-link d-flex align-items-center mb-2" href="#">
-            <img src="Images/setting.png" alt="setting" class="icon me-2">
-            <span>Settings</span>
-        </a>
-        <a class="nav-link d-flex align-items-center mb-2" href="#">
-            <img src="Images/student support.png" alt="student support" class="icon me-2">
-            <span>Student Support</span>
-        </a>
-        <a class="nav-link d-flex align-items-center mb-2" href="#">
-            <img src="Images/feedback.png" alt="feedback" class="icon me-2">
-            <span>Feedback</span>
-        </a>
-        <a class="nav-link d-flex align-items-center mb-2" href="#">
-            <img src="Images/aboutus.png" alt="about us" class="icon me-2">
-            <span>About Us</span>
-        </a>
-        <a class="nav-link d-flex align-items-center mb-2" href="#">
-            <img src="Images/logout.png" alt="log out" class="icon me-2">
-            <span>Logout</span>
-        </a>
-    </nav>
-</aside>
+<section>
+    <div class="sidebar sidebar-light " id="sidebar">
+        <div class="side flex-column">
+            <ul>
+                <li class="side-item">
+                    <a class="side-link" href="#my profile"> 
+                        <img src="Images/profile.png" alt="profile" class="icon">
+                        <span class="menu-text">My Profile</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="content.html">
+                        <img src="Images/My content.png" alt="My content" class="icon">
+                        <span class="menu-text">My Content</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="Course.html">
+                        <img src="Images/course progress.png" alt="course progress" class="icon">
+                        <span class="menu-text">Course Progress</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="Purchase.html">
+                        <img src="Images/Purchase history.png" alt="purchase history" class="icon">
+                        <span class="menu-text">Purchase History</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/mock test history.png" alt="mock test history" class="icon">
+                        <span class="menu-text">Mock Test History</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/setting.png" alt="setting" class="icon">
+                        <span class="menu-text">Settings</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/student support.png" alt="student support" class="icon">
+                        <span class="menu-text">Student Support</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/feedback.png" alt="feedback" class="icon">
+                        <span class="menu-text">Feedback</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/aboutus.png" alt="about us" class="icon">
+                        <span class="menu-text">About Us</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <img src="Images/logout.png" alt="log out" class="icon">
+                        <span class="menu-text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</section>  
 
 <!-- Main Content -->
 <main class="main-content">
     <div class="container-fluid px-4 py-4">
         <div class="row g-3">
             <!-- Left Column - Profile Card -->
-           <div class="col-lg-6">
+           <div class="profile-card col-lg-6 d-flex">
     <div class="card border shadow-sm w-100 ">
         <div class="card-body text-center p-6">
 
@@ -106,41 +131,39 @@
 
             <div class="details-wrapper mx-auto mb-3" style="max-width: 400px;">
                 
-                <div class="details-row mb-3 d-flex justify-content-center">
-                    <span class="detail-label">Name</span>
+                <div class="details-row mb-3 d-flex align-items-center mx-auto">
+                    <span class="detail-label ">Name</span>
                     <span>:</span>
-                    <span class="detail-value">John Doe</span>
+                    <span class="detail-value ">John Doe</span>
                 </div>
 
-                <div class="details-row mb-3 d-flex justify-content-center">
+                <div class="details-row mb-3 d-flex justify-content-between mx-auto">
                     <span class="detail-label">Address</span>
                     <span>:</span>
                     <span class="detail-value">Newroad, Pokhara</span>
                 </div>
 
-                <div class="details-row mb-3 d-flex justify-content-center">
+                <div class="details-row mb-3 d-flex justify-content-between mx-auto">
                     <span class="detail-label">Email</span>
                     <span>:</span>
                     <span class="detail-value">johndoe@gmail.com</span>
                 </div>
 
-                <div class="details-row mb-3 d-flex justify-content-center">
+                <div class="details-row mb-3 d-flex justify-content-between mx-auto">
                     <span class="detail-label">Phone</span>
                     <span>:</span>
                     <span class="detail-value">+977-9846845542</span>
                 </div>
 
-                <div class="details-row mb-3 d-flex justify-content-center">
+                <div class="details-row mb-3 d-flex justify-content-between mx-auto">
                     <span class="detail-label">Gender</span>
                     <span>:</span>
                     <span class="detail-value">Male</span>
                 </div>
             </div>
-
-
-                        <div class="d-flex justify-content-center gap-3 mt-4 mb-5" >
-                            <button class="btn btn-primary-custom d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#editModal">
-                                <img src="Images/edit.png" alt="edit" style="width: 18px; height: 18px;"> Edit
+                <div class="d-flex justify-content-center gap-3 mt-4 mb-5" >
+                    <button class="btn btn-primary-custom d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#editModal">
+                        <img src="Images/edit.png" alt="edit" style="width: 18px; height: 18px;"> Edit
                             </button>
                             <button class="btn btn-danger-custom d-flex align-items-center gap-4 " data-bs-toggle="modal" data-bs-target="#deleteModal">
                                 <img src="Images/delete.png" alt="delete" style="width: 18px; height: 18px;"> Delete
@@ -225,8 +248,8 @@
         <!-- Referral Section -->
         <div class="row g-3 mt-0">
             <div class="col-lg-6">
-                <div class="card border shadow-sm mb-3">
-                    <div class="card-body text-center p-4">
+                <div class="card border shadow-sm mb-4">
+                    <div class=" card-body text-center p-4">
                         <h5 class="fw-bold mb-2">Refer to your friends!</h5>
                         <p class="text-muted small mb-3">Refer KK Academy to your friends through this referral code and enjoy special discounts!</p>
                         <div class="d-flex justify-content-center align-items-center gap-3">
@@ -284,7 +307,7 @@
 
             <!-- Leaderboard -->
             <div class=" col-lg-6">
-                <div class="card border shadow-sm ">
+                <div class="card border shadow-sm"style="height:690px;">
                     <div class="card-body text-center p-4">
                         <h5 class="fw-bold mb-5">Leaderboard</h5>
                         
@@ -296,7 +319,7 @@
                         
                         <hr class="my-3" style="border-color: #6b7280;">
                         <p class="text-muted small mb-3">Based on total points acquired</p>
-                        <button class="btn btn-outline-custom px-4 mt-4 mb-4">View More</button>
+                        <button class="btn btn-outline-custom px-4 mt-4 mb-5">View More</button>
                     </div>
                 </div>
             </div>
@@ -313,17 +336,16 @@
                         </div>
 
                         <div class="mb-4">
-                            <p class="fw-semibold mb-2 small">Highest Score</p>
-                            <div class="score-progress mb-3">
-                                <div class="progress-bar" style="width: 91%;">91</div>
-                            </div>
+    <p class="fw-semibold mb-2 small">Highest Score</p>
+    <div class="score-progress mb-3">
+        <div class="progress-bar" style="width: 91%;">91</div>
+    </div>
 
-                            <p class="fw-semibold mb-2 small">Lowest Score</p>
-                            <div class="score-progress">
-                                <div class="progress-bar" style="width: 37%;">37</div>
-                            </div>
-                        </div>
-
+    <p class="fw-semibold mb-2 small">Lowest Score</p>
+    <div class="score-progress">
+        <div class="progress-bar1" style="width: 37%;">37</div>
+    </div>
+</div>
                         <h6 class="text-center mb-3">Review your past scores</h6>
 
                         <div class="table-responsive">
@@ -338,7 +360,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr class="table-column">
                                         <td>Quiz Paper for Science</td>
                                         <td>2025-11-11</td>
                                         <td>67</td>
@@ -349,7 +371,7 @@
                                             </a>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="table-column">
                                         <td>Quiz Paper for Science</td>
                                         <td>2025-11-11</td>
                                         <td>67</td>
@@ -360,7 +382,7 @@
                                             </a>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="table-column">
                                         <td>Quiz Paper for Science</td>
                                         <td>2025-11-11</td>
                                         <td>67</td>
